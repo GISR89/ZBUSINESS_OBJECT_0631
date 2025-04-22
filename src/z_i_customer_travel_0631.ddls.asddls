@@ -7,7 +7,12 @@ define root view entity Z_I_CUSTOMER_TRAVEL_0631
 {
   key CustomerUuid,
   key CustomerId,
+  key FlightDate,
       Description,
+      @Semantics.amount.currencyCode : 'CurrencyCode'
+      Price,
+      CurrencyCode,
+      OverallStatus,
       LocalCreatedBy,
       LocalCreatedAt,
       LocalLastChangedBy,
